@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="conteiner">
+
+        <div class="div__principal">
+            <div class="cabezera__div">
+                <h1>
+                    <img class="logo" src="encriptador.jpg" alt="encriptador" >
+                </h1>
+            </div>
+            <div class="formulario__div">
+                <div class="form__principal">
+                    <textarea name="text_principal" id="text__principal" cols="30" rows="25" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="advertencia">
+                        <img src="simboloadv.png" alt="advertencia" class="advertencia__logo">
+                        <p>Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                    <div class="botones">
+                    <label for="text_principal" >
+                        <button class="botones__dentro" id="encriptar">Encriptar</button>
+                    </label>
+                    <label for="text_principal" >
+                        <button class="botones__dentro" id="desencriptar">Desencriptar</button>
+                    </label>
+                    </div>
+                </div>
+            </div>    
+        </div>    
+    
+        <div class="div__secundario">
+            <form class="form__secundario">
+                <div class="textencriptado__div">
+                    <textarea name="text_encriptado" id="text__encriptado" cols="20" rows="25" readonly></textarea>
+                </div>
+                <div class="botones">
+                    <label for="text_encriptado" class="contenedor__copiar">
+                        <button class="botones__dentro" id="copiar">Copiar</button>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedor__imagen">
+            <div class="div__imagen">
+                <img src="kisspng-illustration-vector-graphics-stock-photography-com-easyname-hbergeur-web-cration-de-site-web-5bfd34148bb400.5698510715433205965723.png" alt="Nada para encriptar" class="imagen">
+                <div class="parrafo__principal">
+                    <p class="grande">Ningun mensaje fue <br class="sacar__br">encontrado</p>
+                </div>
+                <div class="parrafo__secundario">
+                    <p class="chico">ingresa el texto que desees encriptar o <br class="sacar__br">desencriptar</p>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
